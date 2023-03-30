@@ -237,6 +237,7 @@ export default {
 		},
 		remove_file(file) {
 			this.files = this.files.filter(f => f !== file);
+			this.$refs.file_input.value = '';
 		},
 		toggle_all_private() {
 			let flag;
